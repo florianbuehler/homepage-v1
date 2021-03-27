@@ -1,6 +1,7 @@
 ﻿import React, { Component } from 'react'
 import { Link } from 'react-scroll'
 import HeaderNavToggle from './navToogle'
+import DarkModeToggle from '../atoms/darkModeToggle'
 
 // styles
 import classes from './styles.module.scss'
@@ -63,6 +64,7 @@ class Header extends Component<Props, State> {
               <Link to="skills" spy={true} smooth={true} offset={0} duration={600}>
                 Skills
               </Link>
+              <DarkModeToggle />
             </nav>
           </div>
           <HeaderNavToggle open={this.state.open} handleToggle={(): void => this.handleToggle()} />
