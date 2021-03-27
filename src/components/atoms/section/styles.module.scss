@@ -1,0 +1,23 @@
+﻿@import 'src/styles/variables';
+
+.wrapper {
+  width: 100%;
+  padding: 0 $side-clearance-mobile 0 $side-clearance-mobile;
+  
+  @media #{$desktop} {
+    padding: 0 $side-clearance-desktop 0 $side-clearance-desktop;
+  }
+}
+
+.container {
+  max-width: $max-width-content;
+  margin: auto;
+}
+
+.white {
+  background: #fff;
+}
+
+.primary {
+  background: $primary;
+}

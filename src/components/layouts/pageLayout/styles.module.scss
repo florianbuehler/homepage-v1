@@ -1,0 +1,13 @@
+﻿@import 'src/styles/variables';
+
+.page-template {
+  display: flex;
+
+  min-height: 100vh;
+  flex-direction: column;
+
+  .main {
+    position: relative;
+    flex: 1;
+  }
+}

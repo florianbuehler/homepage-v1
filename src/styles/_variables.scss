@@ -1,0 +1,54 @@
+﻿/* Colors */
+$primary: #116466;
+$secondary: #45a29e;
+$error: #ee3211;
+
+$light-grey: #ababab;
+$light-grey-background: #f2f2f2;
+$light-grey-border: #e0e0e0;
+
+$medium-grey: #7c7c7c;
+$medium-grey-transparent: rgba(124, 124, 124, 0.5);
+
+$dark-grey: #3c3c3c;
+
+
+/* Spacings */
+$header-height: 110px;
+$footer-height: 375px;
+$max-width-content: 1550px;
+$side-clearance-mobile: 1.5rem;
+$side-clearance-desktop: 3.5rem;
+
+
+/* Fonts */
+$light-font: 'Montserrat-Light', 'Helvetica Neue', Arial, sans-serif;
+$regular-font: 'Montserrat-Regular', 'Helvetica Neue', Arial, sans-serif;
+$semi-bold-font: 'Montserrat-SemiBold', 'Helvetica Neue', Arial, sans-serif;
+$bold-font: 'Montserrat-Bold', 'Helvetica Neue', Arial, sans-serif;
+
+
+/* Typography */
+$font-weight-normal: 300;
+$font-weight-bold: 600;
+
+
+/* Typography */
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+$small-font-size: 0.75rem;
+$normal-font-size: 1rem;
+$large-font-size: 18px;
+
+
+/* Breakpoints */
+$breakpoint-tablet: 660px;
+$breakpoint-desktop: 1080px;
+
+$tablet: 'only screen and (min-width: #{$breakpoint-tablet})';
+$desktop: 'only screen and (min-width: #{$breakpoint-desktop})';
+
+
+/* Miscellaneous */
+$transition: 0.3s ease-in-out 0s;

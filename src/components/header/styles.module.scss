@@ -1,0 +1,226 @@
+@import 'src/styles/variables';
+
+.wrapper {
+  // we want a sticky header
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  height: $header-height;
+  padding: 0 $side-clearance-mobile 0 $side-clearance-mobile;
+  background: #b0e0e6;
+  opacity: 0.9;
+  
+  @media #{$desktop} {
+    padding: 0 $side-clearance-desktop 0 $side-clearance-desktop;
+  }
+}
+
+.container {
+  display: flex;
+
+  // we use the complete with for the header
+  // max-width: calc(#{$max-width-content} + 2 * #{$side-clearance});
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo {    
+    h2 {
+      margin: 0;
+      font-size: 20px;
+    }
+    
+    @media #{$desktop} {
+      h2 {
+        margin: 0;
+        font-size: 28px;
+      }
+    }
+  }
+  
+  .navigation {
+    position: fixed;
+    z-index: 9;
+    top: $header-height;
+    //right: 0; // without sliding
+    right: -290px; // with sliding
+    //display: none; // without sliding - we hide all navigation items if the navigation menu is closed
+    display: flex; // with sliding
+    min-width: 290px;
+
+    height: calc(100vh - #{$header-height});
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+
+    margin: 0;
+
+    background: $primary;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: auto;
+
+    transition: right 0.5s ease; // with sliding
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      margin: 0 auto;
+
+      font-size: $normal-font-size;
+
+      // see e.g. https://www.gordonmac.com/css-navigation-with-animated-underline-effect/
+      a {
+        $underline-height: 2px;
+        margin: 0.85rem;
+        color: #fff;
+        font-family: $bold-font;
+
+        &::before {
+          @media #{$desktop} {
+            position: absolute;
+
+            z-index: -1;
+            right: 100%;
+            bottom: -$underline-height;
+            left: 0;
+            height: $underline-height;
+            background: $primary;
+            content: '';
+            transition: $transition;
+          }
+        }
+
+        &:hover::before,
+        &:focus::before,
+        &:active::before {
+          @media #{$desktop} {
+            right: 0;
+          }
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+          @media #{$desktop} {
+            border-bottom: $underline-height solid transparent;
+          }
+        }
+
+        @media #{$desktop} {
+          position: relative;
+          display: block;
+
+          padding: 0.15rem 0;
+          border-top: $underline-height solid transparent;
+          border-bottom: $underline-height solid transparent;
+          margin: 0 1.25rem;
+          backface-visibility: hidden;
+
+          color: $dark-grey;
+          font-weight: 400;
+          text-decoration: none;
+          transform: translateZ(0);
+        }
+      }
+
+      @media #{$desktop} {
+        flex-direction: row;
+      }
+    }
+
+    &-is-active {
+      color: $light-grey !important;
+
+      @media #{$desktop} {
+        color: $primary !important;
+      }
+    }
+
+    &-open {
+      //display: flex; // without sliding
+
+      // if the navigation menu is open, we just override the position
+      // combined with the transition time, this generates the smooth scroll in
+      right: 0; // with sliding
+
+      @media #{$desktop} {
+        display: none;
+      }
+    }
+
+    .button {
+      width: 200px;
+
+      @media #{$desktop} {
+        width: 125px;
+
+        border-color: $primary;
+        background: $primary;
+
+        span {
+          color: #fff;
+        }
+
+        &:hover {
+          background: #fff;
+
+          span {
+            color: $primary;
+          }
+        }
+      }
+
+      &-margin {
+        margin-top: 0.75rem;
+
+        @media #{$desktop} {
+          margin: 0 0 0 0.75rem;
+        }
+      }
+    }
+
+    @media #{$desktop} {
+      position: relative;
+      top: 0;
+      right: 0;
+      height: 100%;
+      flex-direction: row;
+      padding: 0;
+      margin: auto 0;
+      background: transparent;
+    }
+  }
+}
+
+.header-nav-toggle-button {
+  position: relative;
+  z-index: 10;
+  align-self: flex-start;
+  padding: 8px;
+  border: 0;
+  margin: auto 2px auto auto;
+  appearance: none;
+  background: transparent;
+  color: $primary;
+  cursor: pointer;
+  outline: none;
+
+  svg {
+    display: block;
+    width: 24px;
+    height: 20px;
+  }
+
+  @media #{$desktop} {
+    display: none;
+  }
+}
+
+.header-nav-toggle-button-open {
+  color: $primary;
+}
