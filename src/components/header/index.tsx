@@ -1,5 +1,5 @@
 ﻿import React, { Component } from 'react'
-import { Link } from 'gatsby'
+import { Link } from 'react-scroll'
 import HeaderNavToggle from './navToogle'
 
 // styles
@@ -49,19 +49,19 @@ class Header extends Component<Props, State> {
         <div className={classes.container}>
           <div className={classes.logo}>
             <Link to="/">
-              <h2>Zhou Yuerong | 周樾融</h2>
+              <h2>Florian</h2>
             </Link>
           </div>
           <div className={`${classes.navigation} ${this.state.open ? classes.navigationOpen : ''}`}>
             <nav>
-              <Link to="/" activeClassName={classes.navigationIsActive}>
-                home
+              <Link to="about" spy={true} smooth={true} offset={0} duration={600}>
+                About
               </Link>
-              <Link to="/about-me/" activeClassName={classes.navigationIsActive}>
-                about
+              <Link to="projects" spy={true} smooth={true} offset={0} duration={600}>
+                Projects
               </Link>
-              <Link to="/portfolio/" activeClassName={classes.navigationIsActive}>
-                projects
+              <Link to="skills" spy={true} smooth={true} offset={0} duration={600}>
+                Skills
               </Link>
             </nav>
           </div>

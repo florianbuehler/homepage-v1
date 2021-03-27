@@ -25,7 +25,7 @@ const PageLayout: React.FC<Props> = ({
       <SEO title={title} addSuffixToPageTitle={addSuffixToPageTitle} keywords={keywords} description={description} />
       <div className={classes.pageTemplate}>
         <Header />
-        <div className={classes.main}>{children}</div>
+        <main className={classes.main}>{children}</main>
       </div>
     </>
   )
