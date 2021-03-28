@@ -1,7 +1,41 @@
 @import 'src/styles/variables';
 
 .container {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
   min-height: calc(100vh - #{$header-height});
-  background: cyan;
+}
+
+.top {
+  flex-grow: 1;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  .text {
+    height: 100%;
+    width: 45%;
+    
+    h1 {
+      font-family: $regular-font;
+    }
+  }
+
+  .img {
+    height: 100%;
+    width: 40%;
+    margin-top: 9rem;
+
+    svg {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.bottom {
+  flex-grow: 2;
 }
