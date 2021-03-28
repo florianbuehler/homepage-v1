@@ -64,9 +64,9 @@ class Header extends Component<Props, State> {
               <Link to="skills" spy={true} smooth={true} offset={0} duration={600}>
                 Skills
               </Link>
-              <DarkModeToggle />
             </nav>
           </div>
+          <DarkModeToggle />
           <HeaderNavToggle open={this.state.open} handleToggle={(): void => this.handleToggle()} />
         </div>
       </header>

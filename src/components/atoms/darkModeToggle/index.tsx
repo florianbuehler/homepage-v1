@@ -1,5 +1,27 @@
 ﻿import React, { useCallback, useState } from 'react'
 import Toggle from 'react-toggle'
+import { getTheme, setPreferredTheme } from '../../../utils/darkmode'
+
+// styles
+import './styles.scss'
+import iconClasses from './icons.module.scss'
+
+// icons
+import Sun from 'assets/svgs/sun.svg'
+import Moon from 'assets/svgs/moon.svg'
+
+const icons = {
+  checked: (
+    <div className={iconClasses.icon}>
+      <Sun />
+    </div>
+  ),
+  unchecked: (
+    <div className={iconClasses.icon}>
+      <Moon />
+    </div>
+  )
+}
 
 const DarkModeToggle: React.FC = (): React.ReactElement | null => {
   if (typeof window === 'undefined') {
@@ -9,22 +31,18 @@ const DarkModeToggle: React.FC = (): React.ReactElement | null => {
     return null
   }
 
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-ignore
-  const [checked, setChecked] = useState(window.__theme === 'dark')
+  const [checked, setChecked] = useState(getTheme() === 'dark')
 
   const onChange = useCallback(
     (e) => {
       const isChecked = e.target.checked
       setChecked(isChecked)
-      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-      // @ts-ignore
-      window.__setPreferredTheme(isChecked ? 'dark' : 'light')
+      setPreferredTheme(isChecked ? 'dark' : 'light')
     },
     [setChecked]
   )
 
-  return <Toggle checked={checked} onChange={onChange} />
+  return <Toggle checked={checked} icons={icons} onChange={onChange} />
 }
 
 export default DarkModeToggle

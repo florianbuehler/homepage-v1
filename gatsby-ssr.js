@@ -1,9 +1,9 @@
-﻿'use strict';
-
-const React = require('react');
+﻿// eslint-disable-next-line @typescript-eslint/no-var-requires
+const React = require('react')
 
 exports.onRenderBody = ({ setHeadComponents }) => {
   setHeadComponents([
+    // eslint-disable-next-line react/jsx-key
     <script
       dangerouslySetInnerHTML={{
         __html: `
@@ -38,8 +38,8 @@ exports.onRenderBody = ({ setHeadComponents }) => {
   })();
   `
           .replace(/\n/g, ' ')
-          .replace(/ {2}/g, ''),
+          .replace(/ {2}/g, '')
       }}
-    />,
-  ]);
-};
+    />
+  ])
+}
