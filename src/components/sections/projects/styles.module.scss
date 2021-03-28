@@ -4,8 +4,7 @@
   width: 100%;
   //min-height: calc(100vh - #{$header-height});
   //background: magenta;
-  padding: 0 2rem;
-  margin: 5rem 0;
+  margin: 5rem auto;
 }
 
 :global(.dot) {
@@ -43,10 +42,4 @@
   &Next {
     right: 0;
   }
-}
-
-.project {
-  width: 100%;
-  height: 500px;
-  background: green;
 }
