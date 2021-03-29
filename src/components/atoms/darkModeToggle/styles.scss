@@ -1,26 +1,26 @@
-﻿@import 'src/styles/variables';
+@import 'src/styles/variables';
 
 .react-toggle {
-  touch-action: pan-x;
+  position: relative;
 
   display: inline-block;
-  position: relative;
-  cursor: pointer;
-  background-color: transparent;
-  border: 0;
   padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  touch-action: pan-x;
   user-select: none;
 }
 
 .react-toggle-screenreader-only {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
   position: absolute;
+  overflow: hidden;
   width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  margin: -1px;
+  clip: rect(0 0 0 0);
 }
 
 .react-toggle-track {
@@ -28,8 +28,8 @@
   width: 50px;
   height: 24px;
   padding: 0;
-  border-radius: 30px;
   background-color: black;
+  border-radius: 30px;
   transition: all 0.2s ease;
 }
 
@@ -39,14 +39,14 @@
 
 .react-toggle-track-check {
   position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 8px;
   width: 14px;
   height: 14px;
-  top: 0px;
-  bottom: 0px;
   margin-top: auto;
   margin-bottom: auto;
   line-height: 0;
-  left: 8px;
   opacity: 0;
   transition: opacity 0.25s ease;
 }
@@ -57,13 +57,13 @@
 
 .react-toggle-track-x {
   position: absolute;
+  top: 0;
+  right: 6px;
+  bottom: 0;
   width: 15px;
   height: 15px;
-  top: 0px;
-  bottom: 0px;
   margin: auto 0;
   line-height: 0;
-  right: 6px;
   opacity: 1;
   transition: opacity 0.25s ease;
 }
@@ -78,12 +78,12 @@
   left: 1px;
   width: 22px;
   height: 22px;
-  border: 1px solid #4D4D4D;
-  border-radius: 50%;
-  background-color: #FAFAFA;
   box-sizing: border-box;
+  border: 1px solid #4d4d4d;
+  background-color: #fafafa;
+  border-radius: 50%;
+  box-shadow: 0 0 2px 3px $primary;
   transition: all 0.25s ease;
-  box-shadow: 0px 0px 2px 3px $primary;
 }
 
 .react-toggle--checked .react-toggle-thumb {
