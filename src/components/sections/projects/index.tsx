@@ -14,6 +14,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css'
 const Projects: React.FC = (): React.ReactElement => {
   return (
     <Section id="projects" className={classes.container}>
+      <h2>Projects I have been working on</h2>
       <Carousel
         showArrows={true}
         showStatus={false}
