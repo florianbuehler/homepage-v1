@@ -14,32 +14,36 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css'
 const Projects: React.FC = (): React.ReactElement => {
   return (
     <Section id="projects" className={classes.container}>
-      <h2>Projects I have been working on</h2>
-      <Carousel
-        showArrows={true}
-        showStatus={false}
-        showThumbs={false}
-        stopOnHover={true}
-        swipeable={true}
-        renderArrowPrev={(onClickHandler, hasPrev, label): React.ReactNode =>
-          hasPrev && (
-            <button className={classNames(classes.arrow, classes.arrowPrev)}>
-              <Arrow onClick={onClickHandler} title={label} />
-            </button>
-          )
-        }
-        renderArrowNext={(onClickHandler, hasNext, label): React.ReactNode =>
-          hasNext && (
-            <button className={classNames(classes.arrow, classes.arrowNext)}>
-              <Arrow onClick={onClickHandler} title={label} />
-            </button>
-          )
-        }
-      >
-        <Project1 />
-        <Project1 />
-        <Project1 />
-      </Carousel>
+      <div className={classes.top} />
+      <div className={classes.content}>
+        <h2>Projects I have been working on</h2>
+        <Carousel
+          showArrows={true}
+          showStatus={false}
+          showThumbs={false}
+          stopOnHover={true}
+          swipeable={true}
+          renderArrowPrev={(onClickHandler, hasPrev, label): React.ReactNode =>
+            hasPrev && (
+              <button className={classNames(classes.arrow, classes.arrowPrev)}>
+                <Arrow onClick={onClickHandler} title={label} />
+              </button>
+            )
+          }
+          renderArrowNext={(onClickHandler, hasNext, label): React.ReactNode =>
+            hasNext && (
+              <button className={classNames(classes.arrow, classes.arrowNext)}>
+                <Arrow onClick={onClickHandler} title={label} />
+              </button>
+            )
+          }
+        >
+          <Project1 />
+          <Project1 />
+          <Project1 />
+        </Carousel>
+      </div>
+      <div className={classes.bottom} />
     </Section>
   )
 }

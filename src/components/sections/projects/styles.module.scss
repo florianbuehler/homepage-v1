@@ -2,12 +2,23 @@
 
 .container {
   display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.top {
+  flex: 1;
+}
+
+.content {
+  display: flex;
   width: 100%;
   flex-direction: column;
   align-items: center;
-  //min-height: calc(100vh - #{$header-height});
-  //background: magenta;
-  margin: 5rem auto;
+}
+
+.bottom {
+  flex: 2;
 }
 
 :global(.carousel-root) {
