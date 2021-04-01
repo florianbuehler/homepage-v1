@@ -1,0 +1,26 @@
+﻿@import 'src/styles/variables';
+
+.skill-collection {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  ul {
+    width: 50%;
+    background: red;
+    list-style: none;
+  }
+
+  .img {
+    width: 20%;
+    height: 100%;
+
+    svg {
+      width: 100%;
+      height: auto;
+      fill: $primary;
+    }
+  }
+}
