@@ -15,6 +15,17 @@
       height: 55px;
       background: $medium-grey;
       border-radius: 50%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      
+      svg {
+        width: 32px;
+        height: auto;
+        fill: $primary;
+        stroke: $primary;
+      }
     }
     
     .line {
