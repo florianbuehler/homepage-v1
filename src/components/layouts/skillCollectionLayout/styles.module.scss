@@ -11,26 +11,37 @@
     width: 55%;
     list-style: none;
   }
+}
 
-  .img {
-    display: flex;
-    width: 30%;
-    flex-direction: column;
-    
-    .top {
-      flex-grow: 2;
-    }
-    
-    svg {
-      width: 100%;
-      height: auto;
-      fill: $primary;
-    }
-    
-    .bottom {
-      flex-grow: 1;
-    }
+.imgWrapper {
+  display: flex;
+  width: 35%;
+  flex-direction: column;
+  
+  &-left {
+    padding-right: 4rem;
   }
+  
+  &-right {
+    padding-left: 4rem;
+  }
+}
+
+.top {
+  flex-grow: 2;
+}
+
+.img {
+  svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    fill: $primary;
+  }
+}
+
+.bottom {
+  flex-grow: 1;
 }
 
 .left {

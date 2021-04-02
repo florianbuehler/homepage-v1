@@ -3,7 +3,7 @@ import SkillCollectionLayout from '../../layouts/skillCollectionLayout'
 import SkillCard from '../../atoms/skillCard'
 
 // images
-import CodeReview from 'assets/svgs/undraw_code_review.svg'
+import StaticWebsite from 'assets/svgs/undraw_static_website.svg'
 import JavaScript from 'assets/svgs/skills/javascript.svg'
 import TypeScript from 'assets/svgs/skills/typescript.svg'
 import ReactLogo from 'assets/svgs/skills/react-logo.svg'
@@ -11,7 +11,7 @@ import Sass from 'assets/svgs/skills/sass.svg'
 
 const FrontendDevSkills: React.FC = (): React.ReactElement => {
   return (
-    <SkillCollectionLayout skillsPosition="left" img={<CodeReview />}>
+    <SkillCollectionLayout skillsPosition="left" img={<StaticWebsite />}>
       <SkillCard title="JavaScript" specification="Language" img={<JavaScript />}>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab ad asperiores consectetur consequatur deleniti
         dicta, doloremque eius et iste magtatibus odit quis reiciendis sint sit voluptas.

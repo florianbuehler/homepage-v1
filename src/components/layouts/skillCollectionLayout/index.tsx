@@ -8,9 +8,15 @@ import classes from './styles.module.scss'
 type Props = {
   skillsPosition: 'left' | 'right'
   img: React.ReactElement
+  imgStylingAdaptions?: string
 }
 
-const SkillCollectionLayout: React.FC<Props> = ({ skillsPosition, img, children }): React.ReactElement => {
+const SkillCollectionLayout: React.FC<Props> = ({
+  skillsPosition,
+  img,
+  imgStylingAdaptions,
+  children
+}): React.ReactElement => {
   return (
     <article className={classNames(classes.skillCollection, classes[skillsPosition])}>
       <ul>
@@ -18,9 +24,14 @@ const SkillCollectionLayout: React.FC<Props> = ({ skillsPosition, img, children 
           {children}
         </Fade>
       </ul>
-      <div className={classes.img}>
+      <div
+        className={classNames(
+          classes.imgWrapper,
+          skillsPosition === 'left' ? classes.imgWrapperLeft : classes.imgWrapperRight
+        )}
+      >
         <div className={classes.top} />
-        {img}
+        <div className={classNames(classes.img, imgStylingAdaptions)}>{img}</div>
         <div className={classes.bottom} />
       </div>
     </article>

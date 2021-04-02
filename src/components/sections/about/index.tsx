@@ -48,7 +48,7 @@ const About: React.FC = (): React.ReactElement => {
           </li>
         </ul>
         <div>
-          <a href={pdf} download="newfilename">
+          <a href={pdf} download="Resume" className={classes.button}>
             Download Resume
           </a>
         </div>
