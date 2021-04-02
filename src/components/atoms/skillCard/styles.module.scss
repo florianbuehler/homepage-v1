@@ -1,0 +1,42 @@
+@import 'src/styles/variables';
+
+.card {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  
+  .visualization {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .bubble {
+      width: 60px;
+      height: 60px;
+      background: $medium-grey;
+      border-radius: 50%;
+    }
+    
+    .line {
+      width: 3px;
+      flex-grow: 1;
+      background: $medium-grey;
+    }
+  }
+  
+  .content {
+    margin-left: 1rem;
+    
+    h4 {
+      margin-top: 15px;
+      font-family: $semi-bold-font;
+    }
+    
+    > div {
+      margin-bottom: 1.5rem;
+      
+      font-family: $light-font;
+      line-height: 1.5;
+    }
+  }
+}

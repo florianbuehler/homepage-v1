@@ -18,7 +18,11 @@ const SkillCollectionLayout: React.FC<Props> = ({ skillsPosition, img, children 
           {children}
         </Fade>
       </ul>
-      <div className={classes.img}>{img}</div>
+      <div className={classes.img}>
+        <div className={classes.top} />
+        {img}
+        <div className={classes.bottom} />
+      </div>
     </article>
   )
 }

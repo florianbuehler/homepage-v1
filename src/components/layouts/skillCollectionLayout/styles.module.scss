@@ -3,23 +3,30 @@
 .skill-collection {
   display: flex;
   width: 100%;
-  align-items: center;
   justify-content: space-around;
 
   ul {
-    width: 50%;
-    background: red;
+    width: 55%;
     list-style: none;
   }
 
   .img {
-    width: 20%;
-    height: 100%;
-
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    
+    .top {
+      flex-grow: 2;
+    }
+    
     svg {
       width: 100%;
       height: auto;
       fill: $primary;
+    }
+    
+    .bottom {
+      flex-grow: 1;
     }
   }
 }
