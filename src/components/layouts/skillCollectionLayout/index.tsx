@@ -1,5 +1,6 @@
 ﻿import React from 'react'
 import Fade from 'react-reveal/Fade'
+import classNames from 'classnames'
 
 // classes
 import classes from './styles.module.scss'
@@ -11,7 +12,7 @@ type Props = {
 
 const SkillCollectionLayout: React.FC<Props> = ({ skillsPosition, img, children }): React.ReactElement => {
   return (
-    <article className={classes.skillCollection}>
+    <article className={classNames(classes.skillCollection, classes[skillsPosition])}>
       <ul>
         <Fade left={skillsPosition === 'left'} right={skillsPosition === 'right'} duration={1500}>
           {children}
