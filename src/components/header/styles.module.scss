@@ -8,8 +8,6 @@
   width: 100%;
   height: $header-height;
   padding: 0 $side-clearance-mobile 0 $side-clearance-mobile;
-  background: #fff;
-  opacity: 0.9;
   
   @media #{$desktop} {
     padding: 0 $side-clearance-desktop 0 $side-clearance-desktop;
@@ -123,7 +121,7 @@
           margin: 0 1.75rem;
           backface-visibility: hidden;
 
-          color: $dark-grey;
+          color: $text-color;
           font-weight: 400;
           text-decoration: none;
           transform: translateZ(0);

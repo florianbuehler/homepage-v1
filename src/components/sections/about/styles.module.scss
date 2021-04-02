@@ -54,10 +54,10 @@
 }
 
 .button {
-  color: $primary;
   padding: 1rem 2rem;
-  border-radius: 10px;
   border: 2px solid $primary;
+  border-radius: 10px;
+  color: $primary;
   font-family: $semi-bold-font;
   
   &:hover {

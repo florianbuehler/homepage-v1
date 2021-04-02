@@ -7,7 +7,7 @@ import Skills from '../components/sections/skills'
 
 const IndexPage = (): React.ReactElement => {
   return (
-    <PageLayout title="Title" addSuffixToPageTitle>
+    <PageLayout title="Home" addSuffixToPageTitle>
       <HeroHeader />
       <About />
       <Projects />

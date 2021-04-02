@@ -1,0 +1,11 @@
+:root {
+  --primary: #266d6a;
+  --text-color: #3c3c3c;
+  --background: #fff;
+}
+
+:root.dark {
+  --primary: #266d6a;
+  --text-color: #dadada;
+  --background: #171717;
+}

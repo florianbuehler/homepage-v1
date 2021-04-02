@@ -7,7 +7,7 @@ module.exports = {
   /* Your site config here */
   /* https://www.gatsbyjs.org/docs/add-seo-component/ */
   siteMetadata: {
-    titleSuffix: `Zhou Yuerong`,
+    titleSuffix: `Florian Bühler`,
     company: ``,
     description: ``,
     author: ``,

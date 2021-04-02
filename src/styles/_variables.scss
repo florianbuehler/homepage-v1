@@ -1,7 +1,9 @@
 ﻿/* Colors */
-$primary: #116466;
+$primary: var(--primary);
 $secondary: #45a29e;
-$error: #ee3211;
+
+$text-color: var(--text-color);
+$background: var(--background);
 
 $light-grey: #ababab;
 $light-grey-background: #f2f2f2;
