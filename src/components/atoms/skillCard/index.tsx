@@ -6,9 +6,10 @@ import classes from './styles.module.scss'
 type Props = {
   img?: React.ReactElement
   title: string
+  specification?: string
 }
 
-const SkillCard: React.FC<Props> = ({ img, title, children }): React.ReactElement => {
+const SkillCard: React.FC<Props> = ({ img, title, specification, children }): React.ReactElement => {
   return (
     <div className={classes.card}>
       <div className={classes.visualization}>
@@ -16,7 +17,10 @@ const SkillCard: React.FC<Props> = ({ img, title, children }): React.ReactElemen
         <div className={classes.line} />
       </div>
       <div className={classes.content}>
-        <h4>{title}</h4>
+        <div className={classes.title}>
+          <h4>{title}</h4>
+          <h5>{specification}</h5>
+        </div>
         <div>{children}</div>
       </div>
     </div>
