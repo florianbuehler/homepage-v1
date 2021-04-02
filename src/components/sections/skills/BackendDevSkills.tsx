@@ -5,22 +5,22 @@ import SkillCard from '../../atoms/skillCard'
 // images
 import CodeReview from '../../../assets/svgs/undraw_code_review.svg'
 
-const FrontendDevSkills: React.FC = (): React.ReactElement => {
+const BackendDevSkills: React.FC = (): React.ReactElement => {
   return (
-    <SkillCollectionLayout skillsPosition="left" img={<CodeReview />}>
-      <SkillCard title="Javascript">
+    <SkillCollectionLayout skillsPosition="right" img={<CodeReview />}>
+      <SkillCard title="C#">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab ad asperiores consectetur consequatur deleniti
         dicta, doloremque eius et iste magtatibus odit quis reiciendis sint sit voluptas.
       </SkillCard>
-      <SkillCard title="Typescript">
+      <SkillCard title="ASP.NET Core">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab ad asperiores consectetur consequatur deleniti
         necessitatibus odit quis reiciendis sint sit voluptas.
       </SkillCard>
-      <SkillCard title="React">
+      <SkillCard title="Rest APIs">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab ad asperiores consectetur consequatur deleniti
         dicta, doloremque eius et iste magni molestias natus necessitatibus odit quis reiciendis sint sit voluptas.
       </SkillCard>
-      <SkillCard title="CSS / Sass">
+      <SkillCard title="Postgres">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab ad asperiores consectetur consequatur deleniti
         dicta
       </SkillCard>
@@ -28,4 +28,4 @@ const FrontendDevSkills: React.FC = (): React.ReactElement => {
   )
 }
 
-export default FrontendDevSkills
+export default BackendDevSkills
