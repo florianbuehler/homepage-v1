@@ -17,7 +17,7 @@ const BackendDevSkills: React.FC = (): React.ReactElement => {
       img={<FeelingProud />}
       imgStylingAdaptions={classes.backendDevSkillsImg}
     >
-      <SkillCard title="C#" specification="Language">
+      <SkillCard title="C#" specification="Language" img="C#">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab ad asperiores consectetur consequatur deleniti
         dicta, doloremque eius et iste magtatibus odit quis reiciendis sint sit voluptas.
       </SkillCard>
@@ -25,7 +25,7 @@ const BackendDevSkills: React.FC = (): React.ReactElement => {
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab ad asperiores consectetur consequatur deleniti
         necessitatibus odit quis reiciendis sint sit voluptas.
       </SkillCard>
-      <SkillCard title="Rest APIs">
+      <SkillCard title="Rest APIs" img="{ }">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab ad asperiores consectetur consequatur deleniti
         dicta, doloremque eius et iste magni molestias natus necessitatibus odit quis reiciendis sint sit voluptas.
       </SkillCard>

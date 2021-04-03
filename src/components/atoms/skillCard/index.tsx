@@ -4,7 +4,7 @@
 import classes from './styles.module.scss'
 
 type Props = {
-  img?: React.ReactElement
+  img?: React.ReactElement | string
   title: string
   specification?: string
 }

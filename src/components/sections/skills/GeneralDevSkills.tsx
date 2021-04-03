@@ -4,6 +4,8 @@ import SkillCard from '../../atoms/skillCard'
 
 // images
 import DeveloperActivity from 'assets/svgs/undraw_developer_activity.svg'
+import Note from 'assets/svgs/skills/note.svg'
+import WebSite from 'assets/svgs/skills/website.svg'
 import Git from 'assets/svgs/skills/git.svg'
 
 // classes
@@ -16,11 +18,11 @@ const GeneralDevSkills: React.FC = (): React.ReactElement => {
       img={<DeveloperActivity />}
       imgStylingAdaptions={classes.generalDevSkillsImg}
     >
-      <SkillCard title="Scrum">
+      <SkillCard title="Scrum" img={<Note />}>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab ad asperiores consectetur consequatur deleniti
         dicta, doloremque eius et iste magtatibus odit quis reiciendis sint sit voluptas.
       </SkillCard>
-      <SkillCard title="Domain-Driven Design">
+      <SkillCard title="Domain-Driven Design" img={<WebSite />}>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab ad asperiores consectetur consequatur deleniti
         necessitatibus odit quis reiciendis sint sit voluptas.
       </SkillCard>

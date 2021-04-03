@@ -27,7 +27,7 @@ const Impressum: React.FC = (): React.ReactElement => {
           </a>
         </li>
         <li>
-          Arrow right icon made by{' '}
+          Arrow right, post it note and web site icon made by{' '}
           <a href="https://www.freepik.com" title="Freepik">
             Freepik
           </a>{' '}
