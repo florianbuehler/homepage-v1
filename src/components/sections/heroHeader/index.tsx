@@ -1,4 +1,5 @@
 ﻿import React from 'react'
+import Typewriter from 'typewriter-effect'
 import Section from '../../atoms/section'
 
 // images
@@ -13,7 +14,31 @@ const HeroHeader: React.FC = (): React.ReactElement => {
       <div className={classes.top} />
       <div className={classes.content}>
         <div className={classes.text}>
-          <h1>I am a Full Stack Developer</h1>
+          <h1 className={classes.title}>
+            I am
+            <Typewriter
+              onInit={(typewriter): void => {
+                typewriter
+                  .pauseFor(1000)
+                  .typeString('Florian!')
+                  .pauseFor(2500)
+                  .deleteAll()
+                  .pauseFor(1000)
+                  .typeString('a Full Stack Developer!')
+                  .pauseFor(2500)
+                  .deleteAll()
+                  .pauseFor(1000)
+                  .typeString('a Frontend Expert!')
+                  .pauseFor(2500)
+                  .start()
+              }}
+              options={{
+                loop: true,
+                wrapperClassName: classes.typewriterWrapper,
+                cursorClassName: classes.typewriterCursor
+              }}
+            />
+          </h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad aperiam deleniti doloremque dolores fuga
             impedit nesciunt placeat, qui totam? Adipisci assumenda itaque minus modi nemo obcaecati perspiciatis quod

@@ -12,22 +12,50 @@
 
 .content {
   display: flex;
+  width: 100%;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
 
   .text {
-    width: 45%;
+    width: 55%;
     height: 100%;
-    
-    h1 {
+
+    .title {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
       font-family: $regular-font;
+      font-size: 48px;
+      text-wrap: normal;
+
+      .typewriter-wrapper {
+        margin-left: 0.9rem;
+        color: $primary;
+        font-family: $regular-font;
+        font-size: 48px;
+        line-height: 1.25;
+      }
+
+      .typewriter-cursor {
+        margin-left: 1px;
+        animation: typewriter-cursor 1s infinite;
+        font-family: $light-font;
+        font-size: 48px;
+        font-weight: 200;
+        line-height: 1.25;
+      }
+    }
+    
+    p {
+      margin-right: 8rem;
     }
   }
 
   .img {
     width: 40%;
     height: 100%;
-    margin-top: 9rem;
+    margin-top: 12rem;
 
     svg {
       width: 100%;
@@ -39,4 +67,18 @@
 
 .bottom {
   flex-grow: 2;
+}
+
+@keyframes typewriter-cursor {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
