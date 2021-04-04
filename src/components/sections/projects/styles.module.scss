@@ -76,3 +76,18 @@
     right: 0;
   }
 }
+
+.helfr-landing-page-color,
+.helfr-app-color,
+.token-platform-color {
+  color: #6432fa;
+}
+
+.helfr-app-img {
+  box-shadow: none;
+  
+  > img {
+    width: 120% !important;
+    margin-left: -2rem;
+  }
+}

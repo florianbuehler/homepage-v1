@@ -51,18 +51,18 @@
   width: 45%;
   height: 100%;
   flex-direction: column;
+}
 
-  .top {
-    flex: 2;
-  }
+.top {
+  flex: 3;
+}
 
-  .img {
-    //box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    transform: rotate(2deg);
-  }
-  
-  .bottom {
-    flex: 3;
-  }
+.img {
+  //box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  transform: rotate(4deg);
+}
+
+.bottom {
+  flex: 3;
 }

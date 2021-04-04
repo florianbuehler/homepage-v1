@@ -2,13 +2,16 @@
 import ProjectLayout from '../../layouts/projectLayout'
 
 // images
-import hackerNewsClone from 'assets/imgs/hacker-news-clone.jpg'
+import tokenPlatform from 'assets/imgs/token-platform.jpg'
 
-const HackerNewsClone: React.FC = (): React.ReactElement => {
+// styles
+import classes from './styles.module.scss'
+
+const TokenPlatform: React.FC = (): React.ReactElement => {
   return (
-    <ProjectLayout img={hackerNewsClone}>
-      <h3>Hacker News Clone</h3>
-      <h4>Frontend</h4>
+    <ProjectLayout img={tokenPlatform}>
+      <h3>Token Platform</h3>
+      <h4 className={classes.tokenPlatformColor}>Frontend</h4>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci consequatur, error excepturi hic magnam
         tempora? Ad, architecto beatae consequatur necessitatibus nemo praesentium ullam. Totam.
@@ -20,4 +23,4 @@ const HackerNewsClone: React.FC = (): React.ReactElement => {
   )
 }
 
-export default HackerNewsClone
+export default TokenPlatform

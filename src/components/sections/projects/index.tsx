@@ -2,7 +2,10 @@
 import { Carousel } from 'react-responsive-carousel'
 import classNames from 'classnames'
 import Section from '../../atoms/section'
+import HelfrLandingPage from './HelfrLandingPage'
+import HelfrApp from './HelfrApp'
 import HackerNewsClone from './HackerNewsClone'
+import TokenPlatform from './TokenPlatform'
 
 // icons
 import Arrow from 'assets/svgs/arrow.svg'
@@ -43,9 +46,10 @@ const Projects: React.FC = (): React.ReactElement => {
             )
           }
         >
+          <HelfrLandingPage />
+          <HelfrApp />
           <HackerNewsClone />
-          <HackerNewsClone />
-          <HackerNewsClone />
+          <TokenPlatform />
         </Carousel>
       </div>
       <div className={classes.bottom} />

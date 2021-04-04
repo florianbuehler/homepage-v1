@@ -2,13 +2,16 @@
 import ProjectLayout from '../../layouts/projectLayout'
 
 // images
-import hackerNewsClone from 'assets/imgs/hacker-news-clone.jpg'
+import helfrLandingPage from 'assets/imgs/helfr-landingpage.jpg'
 
-const HackerNewsClone: React.FC = (): React.ReactElement => {
+// styles
+import classes from './styles.module.scss'
+
+const HelfrLandingPage: React.FC = (): React.ReactElement => {
   return (
-    <ProjectLayout img={hackerNewsClone}>
-      <h3>Hacker News Clone</h3>
-      <h4>Frontend</h4>
+    <ProjectLayout img={helfrLandingPage}>
+      <h3>Helfr Landing Page</h3>
+      <h4 className={classes.helfrLandingPageColor}>Frontend</h4>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci consequatur, error excepturi hic magnam
         tempora? Ad, architecto beatae consequatur necessitatibus nemo praesentium ullam. Totam.
@@ -20,4 +23,4 @@ const HackerNewsClone: React.FC = (): React.ReactElement => {
   )
 }
 
-export default HackerNewsClone
+export default HelfrLandingPage

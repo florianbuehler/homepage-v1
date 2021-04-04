@@ -1,13 +1,15 @@
 ﻿import React from 'react'
+import classNames from 'classnames'
 
 // styles
 import classes from './styles.module.scss'
 
 type Props = {
   img: string
+  additionalImgClasses?: string
 }
 
-const ProjectLayout: React.FC<Props> = ({ img, children }): React.ReactElement => {
+const ProjectLayout: React.FC<Props> = ({ img, additionalImgClasses, children }): React.ReactElement => {
   return (
     <article className={classes.container}>
       <div className={classes.contentWrapper}>
@@ -17,7 +19,7 @@ const ProjectLayout: React.FC<Props> = ({ img, children }): React.ReactElement =
       </div>
       <div className={classes.imgWrapper}>
         <div className={classes.top} />
-        <div className={classes.img}>
+        <div className={classNames(classes.img, additionalImgClasses)}>
           <img src={img} alt="" />
         </div>
         <div className={classes.bottom} />

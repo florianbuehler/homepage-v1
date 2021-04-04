@@ -13,7 +13,7 @@ import classes from './styles.module.scss'
 const About: React.FC = (): React.ReactElement => {
   return (
     <Section id="about" className={classes.container}>
-      <h2>About</h2>
+      <h2>About Me</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consectetur dicta dolores earum iusto nam non
         sint sunt. Debitis et quos sequi sit! Aliquid autem distinctio dolore error est, laboriosam magnam maiores minus
