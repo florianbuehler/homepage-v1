@@ -14,7 +14,6 @@ module.exports = {
     url: ``, // No trailing slash allowed!
     image: `/xyz` // Path to your image you placed in the `static` folder TODO add meta data image
   },
-  pathPrefix: '/homepage',
   plugins: [
     `gatsby-plugin-resolve-src`,
     {
