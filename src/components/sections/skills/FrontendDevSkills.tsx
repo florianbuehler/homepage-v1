@@ -13,20 +13,22 @@ const FrontendDevSkills: React.FC = (): React.ReactElement => {
   return (
     <SkillCollectionLayout skillsPosition="left" img={<StaticWebsite />}>
       <SkillCard title="JavaScript" specification="Language" img={<JavaScript />}>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab ad asperiores consectetur consequatur deleniti
-        dicta, doloremque eius et iste magtatibus odit quis reiciendis sint sit voluptas.
+        JavaScript is a lightweight, interpreted, or just-in-time compiled programming language, that runs in the
+        browser and allows you to implement complex features on web pages. Every time a web page does more than just sit
+        there and display static information JavaScript is involved.
       </SkillCard>
       <SkillCard title="TypeScript" specification="Language" img={<TypeScript />}>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab ad asperiores consectetur consequatur deleniti
-        necessitatibus odit quis reiciendis sint sit voluptas.
+        TypeScript is a strict syntactical superset of JavaScript which provides static typing and thereby more robust
+        and less error-prone code. It is designed for the development of larger applications and allows multiple team
+        members to work together efficiently.
       </SkillCard>
-      <SkillCard title="React.js" specification="Js Framework" img={<ReactLogo />}>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab ad asperiores consectetur consequatur deleniti
-        dicta, doloremque eius et iste magni molestias natus necessitatibus odit quis reiciendis sint sit voluptas.
+      <SkillCard title="React" specification="Js Framework" img={<ReactLogo />}>
+        React is a JavaScript library which makes it painless to create interactive UIs using a component based approach
+        and by providing an efficient state management and taking care of the DOM rendering.
       </SkillCard>
       <SkillCard title="CSS / Sass" img={<Sass />}>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab ad asperiores consectetur consequatur deleniti
-        dicta
+        Sass is a CSS extension which compiles to CSS and provides several features allowing for cleaner, more
+        consistent and better readable stylings of web pages.
       </SkillCard>
     </SkillCollectionLayout>
   )
