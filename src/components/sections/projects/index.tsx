@@ -2,7 +2,7 @@
 import { Carousel } from 'react-responsive-carousel'
 import classNames from 'classnames'
 import Section from '../../atoms/section'
-import Project1 from './Project1'
+import HackerNewsClone from './HackerNewsClone'
 
 // icons
 import Arrow from 'assets/svgs/arrow.svg'
@@ -17,6 +17,11 @@ const Projects: React.FC = (): React.ReactElement => {
       <div className={classes.top} />
       <div className={classes.content}>
         <h2>Projects I have been working on</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eius est, excepturi expedita facere hic
+          illum iure laboriosam non porro qui quos ratione reiciendis repudiandae, saepe sed similique sint? Deserunt
+          ipsum iusto laborum molestiae voluptate. Deleniti dolore incidunt pariatur rerum!
+        </p>
         <Carousel
           showArrows={true}
           showStatus={false}
@@ -38,9 +43,9 @@ const Projects: React.FC = (): React.ReactElement => {
             )
           }
         >
-          <Project1 />
-          <Project1 />
-          <Project1 />
+          <HackerNewsClone />
+          <HackerNewsClone />
+          <HackerNewsClone />
         </Carousel>
       </div>
       <div className={classes.bottom} />

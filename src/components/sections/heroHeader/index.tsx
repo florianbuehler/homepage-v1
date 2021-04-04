@@ -20,15 +20,15 @@ const HeroHeader: React.FC = (): React.ReactElement => {
               onInit={(typewriter): void => {
                 typewriter
                   .pauseFor(1000)
-                  .typeString('Florian!')
+                  .typeString('Florian')
                   .pauseFor(2500)
                   .deleteAll()
                   .pauseFor(1000)
-                  .typeString('a Full Stack Developer!')
+                  .typeString('a Full Stack Developer')
                   .pauseFor(2500)
                   .deleteAll()
                   .pauseFor(1000)
-                  .typeString('a Frontend Expert!')
+                  .typeString('a Frontend Expert')
                   .pauseFor(2500)
                   .start()
               }}
