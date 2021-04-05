@@ -11,14 +11,13 @@ const HelfrLandingPage: React.FC = (): React.ReactElement => {
   return (
     <ProjectLayout img={helfrLandingPage}>
       <h3>Helfr Landing Page</h3>
-      <h4 className={classes.helfrLandingPageColor}>Frontend</h4>
+      <h4 className={classes.helfrLandingPageColor}>Landing Page</h4>
+      <p>A fully responsive, multi page landing page for a coupon platform offering of a client.</p>
+      <p>The landing page was created using Gatsby, JavaScript and Sass.</p>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci consequatur, error excepturi hic magnam
-        tempora? Ad, architecto beatae consequatur necessitatibus nemo praesentium ullam. Totam.
+        Gatsby is a React-based framework, that helps to build modern, scalable and blazing fast static websites and
+        apps.
       </p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi atque fugit incidunt odit quod sunt?</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi atque fugit incidunt odit quod sunt?</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi atque fugit incidunt odit quod sunt?</p>
     </ProjectLayout>
   )
 }

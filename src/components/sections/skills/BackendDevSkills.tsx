@@ -14,6 +14,7 @@ const BackendDevSkills: React.FC = (): React.ReactElement => {
   return (
     <SkillCollectionLayout
       skillsPosition="right"
+      title="Backend Development"
       img={<FeelingProud />}
       imgStylingAdaptions={classes.backendDevSkillsImg}
     >

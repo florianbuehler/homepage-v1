@@ -15,7 +15,7 @@
     "stylelint": "stylelint src/**/*.{css,scss}",
     "fix-stylelint": "stylelint --fix src/**/*.{css,scss}",
     "serve": "gatsby serve",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "gatsby build --prefix-paths && gh-pages -r https://github.com/florianbuehler/florianbuehler.github.io.git -b main -d public"
   },
   "browserslist": {
     "production": [

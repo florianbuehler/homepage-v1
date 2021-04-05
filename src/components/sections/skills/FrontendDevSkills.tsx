@@ -11,7 +11,7 @@ import Sass from 'assets/svgs/skills/sass.svg'
 
 const FrontendDevSkills: React.FC = (): React.ReactElement => {
   return (
-    <SkillCollectionLayout skillsPosition="left" img={<StaticWebsite />}>
+    <SkillCollectionLayout skillsPosition="left" title="Frontend Development" img={<StaticWebsite />}>
       <SkillCard title="JavaScript" specification="Language" img={<JavaScript />}>
         JavaScript is a lightweight, interpreted, or just-in-time compiled programming language, that runs in the
         browser and allows you to implement complex features on web pages. Every time a web page does more than just sit

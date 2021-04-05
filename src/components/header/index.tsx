@@ -55,13 +55,13 @@ class Header extends Component<Props, State> {
           </div>
           <div className={`${classes.navigation} ${this.state.open ? classes.navigationOpen : ''}`}>
             <nav>
-              <Link to="about" spy={true} smooth={true} offset={0} duration={600}>
+              <Link to="about" spy={true} smooth={true} offset={-75} duration={600}>
                 About
               </Link>
               <Link to="projects" spy={true} smooth={true} offset={0} duration={600}>
                 Projects
               </Link>
-              <Link to="skills" spy={true} smooth={true} offset={0} duration={600}>
+              <Link to="skills" spy={true} smooth={true} offset={-75} duration={600}>
                 Skills
               </Link>
             </nav>

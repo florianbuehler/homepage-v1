@@ -6,9 +6,12 @@
   justify-content: space-between;
   padding: 0 3rem;
   margin: 3rem 0;
+}
 
+.contentWrapper {
+  width: 55%;
+  
   ul {
-    width: 55%;
     list-style: none;
   }
 }

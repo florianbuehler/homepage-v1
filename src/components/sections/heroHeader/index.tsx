@@ -3,6 +3,7 @@ import Typewriter from 'typewriter-effect'
 import Section from '../../atoms/section'
 
 // images
+// import CodeReview from 'assets/svgs/undraw_feeling_proud.svg'
 import CodeReview from 'assets/svgs/undraw_code_review.svg'
 
 // styles
@@ -40,9 +41,8 @@ const HeroHeader: React.FC = (): React.ReactElement => {
             />
           </h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad aperiam deleniti doloremque dolores fuga
-            impedit nesciunt placeat, qui totam? Adipisci assumenda itaque minus modi nemo obcaecati perspiciatis quod
-            sunt!
+            I strongly believe that if you can image something, it also can be built. No challenge, no matter how big,
+            is unsolvable - if you just tackle it in a passionate and creative team.
           </p>
         </div>
         <div className={classes.img}>
