@@ -21,9 +21,9 @@ const Projects: React.FC = (): React.ReactElement => {
       <div className={classes.content}>
         <h2>Projects I have been working on</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eius est, excepturi expedita facere hic
-          illum iure laboriosam non porro qui quos ratione reiciendis repudiandae, saepe sed similique sint? Deserunt
-          ipsum iusto laborum molestiae voluptate. Deleniti dolore incidunt pariatur rerum!
+          During my work as a consultant and senior consultant at d-fine I have been working on different software
+          projects for multiple clients. Additionally I have been working privately on some smaller &quot;just for
+          fun&quot; projects to get experienced with new technologies and frameworks. Some of these projects are
         </p>
         <Carousel
           showArrows={true}
