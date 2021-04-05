@@ -15,6 +15,7 @@ const GeneralDevSkills: React.FC = (): React.ReactElement => {
   return (
     <SkillCollectionLayout
       skillsPosition="left"
+      title="General"
       img={<DeveloperActivity />}
       imgStylingAdaptions={classes.generalDevSkillsImg}
     >
