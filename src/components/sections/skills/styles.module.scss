@@ -20,12 +20,21 @@
 .backend-dev-skills-img {
   svg {
     width: 70%;
+    margin: 0 auto;
+
+    @media #{$desktop} {
+      margin-left: 0;
+    }
   }
 }
 
 .general-dev-skills-img {
   svg {
     width: 90%;
-    margin-left: 2rem;
+    margin: 0 auto;
+
+    @media #{$desktop} {
+      margin-left: 2rem;
+    }
   }
 }
