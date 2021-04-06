@@ -6,7 +6,11 @@
   min-height: calc(100vh - #{$header-height});
   flex-direction: column;
   align-items: center;
-  margin: 6rem auto 12rem auto;
+  margin: 6rem auto 2rem auto;
+
+  @media #{$desktop} {
+    margin: 6rem auto 12rem auto;
+  }
   
   h2 {
     margin-bottom: 2rem;
@@ -16,12 +20,21 @@
 .backend-dev-skills-img {
   svg {
     width: 70%;
+    margin: 0 auto;
+
+    @media #{$desktop} {
+      margin-left: 0;
+    }
   }
 }
 
 .general-dev-skills-img {
   svg {
     width: 90%;
-    margin-left: 2rem;
+    margin: 0 auto;
+
+    @media #{$desktop} {
+      margin-left: 2rem;
+    }
   }
 }

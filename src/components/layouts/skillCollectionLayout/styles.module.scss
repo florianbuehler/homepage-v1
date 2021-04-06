@@ -3,13 +3,24 @@
 .skill-collection {
   display: flex;
   width: 100%;
+  align-items: center;
   justify-content: space-between;
-  padding: 0 3rem;
-  margin: 3rem 0;
+  margin: 1.5rem 0;
+
+  @media #{$desktop} {
+    flex-direction: row;
+    align-items: normal;
+    padding: 0 3rem;
+    margin: 3rem 0;
+  }
 }
 
 .contentWrapper {
-  width: 55%;
+  width: 100%;
+
+  @media #{$desktop} {
+    width: 55%;
+  }
   
   ul {
     list-style: none;
@@ -18,15 +29,23 @@
 
 .imgWrapper {
   display: flex;
-  width: 35%;
+  width: 80%;
   flex-direction: column;
+
+  @media #{$desktop} {
+    width: 35%;
+  }
   
   &-left {
-    padding-right: 4rem;
+    @media #{$desktop} {
+      padding-right: 4rem;
+    }
   }
   
   &-right {
-    padding-left: 4rem;
+    @media #{$desktop} {
+      padding-left: 4rem;
+    }
   }
 }
 
@@ -44,13 +63,22 @@
 }
 
 .bottom {
+  min-height: 2rem;
   flex-grow: 1;
 }
 
 .left {
-  flex-direction: row;
+  flex-direction: column-reverse;
+
+  @media #{$desktop} {
+    flex-direction: row;
+  }
 }
 
 .right {
-  flex-direction: row-reverse;
+  flex-direction: column-reverse;
+
+  @media #{$desktop} {
+    flex-direction: row-reverse;
+  }
 }
