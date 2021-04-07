@@ -43,21 +43,34 @@
     
     .title {
       display: flex;
-      flex-direction: row;
-      align-items: flex-end;
-      margin: 12px 0 0 0;
+      flex-direction: column;
+      margin-top: 2px;
+
+      @media #{$desktop} {
+        flex-direction: row;
+        align-items: flex-end;
+        margin-top: 12px;
+      }
       
       h4 {
+        margin-bottom: 0;
         font-family: $semi-bold-font;
+
+        @media #{$desktop} {
+          margin-bottom: 10px;
+        }
       }
       
       h5 {
-        margin-left: 1rem;
         font-size: 14px;
+
+        @media #{$desktop} {
+          margin-left: 1rem;
+        }
       }
     }
     
-    > div {
+    > div:last-of-type {
       margin-bottom: 1.5rem;
       
       font-family: $light-font;
