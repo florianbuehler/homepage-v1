@@ -15,7 +15,11 @@
   
   p {
     margin: 0.5rem 0;
-    text-align: center;
+    text-align: left;
+    
+    @media #{$desktop} {
+      text-align: center;
+    }
   }
 }
 
@@ -43,7 +47,11 @@
       display: flex;
       flex-direction: row;
       align-items: center;
-      margin: 1rem 0;
+      margin: 1.5rem 0;
+      
+      @media #{$desktop} {
+        margin: 1rem 0;  
+      }
       
       svg {
         width: auto;

@@ -2,14 +2,17 @@
 
 .wrapper {
   // we want a sticky header
-  //position: sticky;
+  position: sticky;
   z-index: 10;
   top: 0;
   width: 100%;
   height: $header-height;
   padding: 0 $side-clearance-mobile 0 $side-clearance-mobile;
+  background: $background;
+  opacity: 0.9;
   
   @media #{$desktop} {
+    position: relative;
     padding: 0 $side-clearance-desktop 0 $side-clearance-desktop;
   }
 }
@@ -223,4 +226,20 @@
 
 .header-nav-toggle-button-open {
   color: $primary;
+}
+
+.visible-on-mobile {
+  margin-top: 1rem;
+  
+  @media #{$tablet} {
+    display: none;
+  }
+}
+
+.visible-on-tablet {
+  display: none;
+  
+  @media #{$tablet} {
+    display: block;
+  }
 }

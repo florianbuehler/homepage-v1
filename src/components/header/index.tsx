@@ -65,8 +65,13 @@ class Header extends Component<Props, State> {
                 Skills
               </Link>
             </nav>
+            <div className={classes.visibleOnMobile}>
+              <DarkModeToggle />
+            </div>
           </div>
-          <DarkModeToggle />
+          <div className={classes.visibleOnTablet}>
+            <DarkModeToggle />
+          </div>
           <HeaderNavToggle open={this.state.open} handleToggle={(): void => this.handleToggle()} />
         </div>
       </header>
