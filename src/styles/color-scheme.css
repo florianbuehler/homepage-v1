@@ -2,10 +2,12 @@
   --primary: #266d6a;
   --text-color: #3c3c3c;
   --background: #fff;
+  --medium-grey-transparent: rgba(124, 124, 124, 0.6);
 }
 
 :root.dark {
   --primary: #266d6a;
   --text-color: #dadada;
   --background: #171717;
+  --medium-grey-transparent: rgba(124, 124, 124, 0.2);
 }
