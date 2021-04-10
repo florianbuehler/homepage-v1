@@ -217,6 +217,8 @@
     display: block;
     width: 24px;
     height: 20px;
+    fill: $primary;
+    stroke: $primary;
   }
 
   @media #{$desktop} {
@@ -230,6 +232,10 @@
 
 .visible-on-mobile {
   margin-top: 1rem;
+  
+  :global(.react-toggle-track) {
+    background: $dark-grey !important;
+  }
   
   @media #{$tablet} {
     display: none;

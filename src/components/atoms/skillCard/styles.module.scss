@@ -17,7 +17,7 @@
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      background: $medium-grey;
+      background: $medium-grey-transparent;
       border-radius: 50%;
       color: $primary;
       font-family: $semi-bold-font;
@@ -34,7 +34,7 @@
     .line {
       width: 3px;
       flex-grow: 1;
-      background: $medium-grey;
+      background: $medium-grey-transparent;
     }
   }
   

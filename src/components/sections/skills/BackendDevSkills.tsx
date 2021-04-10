@@ -3,7 +3,8 @@ import SkillCollectionLayout from '../../layouts/skillCollectionLayout'
 import SkillCard from '../../atoms/skillCard'
 
 // images
-import FeelingProud from 'assets/svgs/undraw_feeling_proud.svg'
+//import FeelingProud from 'assets/svgs/undraw_feeling_proud.svg'
+import CodeReview from 'assets/svgs/undraw_code_review.svg'
 import NETCore from 'assets/svgs/skills/dot-net-core.svg'
 import Postgres from 'assets/svgs/skills/postgresql.svg'
 
@@ -15,7 +16,7 @@ const BackendDevSkills: React.FC = (): React.ReactElement => {
     <SkillCollectionLayout
       skillsPosition="right"
       title="Backend Development"
-      img={<FeelingProud />}
+      img={<CodeReview />}
       imgStylingAdaptions={classes.backendDevSkillsImg}
     >
       <SkillCard title="C#" specification="Language" img="C#">
