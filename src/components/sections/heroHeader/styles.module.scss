@@ -14,10 +14,10 @@
   display: flex;
   width: 100%;
   flex-direction: column;
-  justify-content: center;
 
   @media #{$desktop} {
     flex-direction: row;
+    justify-content: space-around;
   }
   
   .text {
@@ -81,15 +81,15 @@
   }
 
   .img {
-    width: 70%;
-    // width: 30%;
+    width: 60%;
     height: 100%;
     margin: 4rem auto 0 auto;
-    // margin-top: 8rem;
 
     @media #{$desktop} {
-      width: 40%;
-      margin: 12rem 0 0 0;
+      // width: 40%;
+      width: 27%;
+      // margin-top: 12rem;
+      margin: 12rem 2rem 0 0;
     }
     
     svg {

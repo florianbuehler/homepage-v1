@@ -3,8 +3,8 @@ import Typewriter from 'typewriter-effect'
 import Section from '../../atoms/section'
 
 // images
-// import CodeReview from 'assets/svgs/undraw_feeling_proud.svg'
-import CodeReview from 'assets/svgs/undraw_code_review.svg'
+import FeelingProud from 'assets/svgs/undraw_feeling_proud.svg'
+// import CodeReview from 'assets/svgs/undraw_code_review.svg'
 
 // styles
 import classes from './styles.module.scss'
@@ -46,7 +46,7 @@ const HeroHeader: React.FC = (): React.ReactElement => {
           </p>
         </div>
         <div className={classes.img}>
-          <CodeReview />
+          <FeelingProud />
         </div>
       </div>
       <div className={classes.bottom} />
