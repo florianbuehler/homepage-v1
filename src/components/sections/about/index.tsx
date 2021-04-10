@@ -15,17 +15,18 @@ const About: React.FC = (): React.ReactElement => {
     <Section id="about" className={classes.container}>
       <h2>About Me</h2>
       <p>
-        I&apos;m a passionate full stack developer with a strong hands-on mentality and over 3 years of experience
-        building scalable web applications in agile teams from front to back - for both prototypes and existing systems.
-        I possess strong analytical, methodical and problem-solving skills sharpened during five years of mathematical
-        education and over four years of work as a consultant and senior consultant for multiple clients.
+        I&apos;m a passionate full stack developer with a strong hands-on mentality and over 4 years of experience in
+        building prototypes and scalable web applications in agile teams from front to back. I possess strong
+        analytical, methodical and problem-solving skills and have a quick comprehension - already shown during five
+        years of mathematical and technical studies and in over four years as a (senior) consultant for multiple
+        clients.
       </p>
       <p>
         Since March 2017 I am working as a consultant and later as a senior consultant for d-fine. D-fine is a leading
         European consulting firm with scientifically minded employees, which provides innovative, customized and
-        futureproof software solutions for complex challenges for its clients. On a day to day basis I am engaging with
-        requirement gathering, solution design, coordination with business owners, implementation, testing and
-        documentation.
+        futureproof software solutions for complex challenges for its clients. On a day to day basis I currently am
+        engaging with requirement gathering, solution design, documentation, coordination with business owners,
+        implementation and testing.
       </p>
       <div className={classes.additionalInformation}>
         <ul>
