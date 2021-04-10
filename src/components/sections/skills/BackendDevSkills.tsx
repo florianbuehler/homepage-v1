@@ -5,6 +5,7 @@ import SkillCard from '../../atoms/skillCard'
 // images
 //import FeelingProud from 'assets/svgs/undraw_feeling_proud.svg'
 import CodeReview from 'assets/svgs/undraw_code_review.svg'
+import NodeJs from 'assets/svgs/skills/nodejs.svg'
 import NETCore from 'assets/svgs/skills/dot-net-core.svg'
 import Postgres from 'assets/svgs/skills/postgresql.svg'
 
@@ -19,6 +20,10 @@ const BackendDevSkills: React.FC = (): React.ReactElement => {
       img={<CodeReview />}
       imgStylingAdaptions={classes.backendDevSkillsImg}
     >
+      <SkillCard title="Node.js" specification="JS Runtime" img={<NodeJs />}>
+        Node.js is a JavaScript runtime allowing JavaScript to be executed outside of a web browser and therefore
+        enables JavaScript to run on a server and be used for both - frontend and backend development.
+      </SkillCard>
       <SkillCard title="C#" specification="Language" img="C#">
         C# is a modern, object-oriented, general-purpose and type-safe programming language. It enables developers to
         build many types of secure and robust applications that run in the .NET ecosystem.
