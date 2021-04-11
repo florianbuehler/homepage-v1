@@ -15,7 +15,7 @@ const About: React.FC = (): React.ReactElement => {
     <Section id="about" className={classes.container}>
       <h2>About Me</h2>
       <p>
-        I&apros;m a passionate full stack developer with a strong hands-on mentality and over 4 years of experience in
+        I&apos;m a passionate full stack developer with a strong hands-on mentality and over 4 years of experience in
         building prototypes and scalable web applications in agile teams from front to back. I possess a strong
         analytical, methodical and problem-solving mindset and have a quick comprehension - already shown during five
         years of mathematical and technical studies and in over four years as a (senior) consultant and software
