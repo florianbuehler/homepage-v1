@@ -46,10 +46,10 @@ const Projects: React.FC = (): React.ReactElement => {
             )
           }
         >
+          <TokenPlatform />
           <HelfrLandingPage />
           <HelfrApp />
           <HackerNewsClone />
-          <TokenPlatform />
         </Carousel>
       </div>
       <div className={classes.bottom} />
