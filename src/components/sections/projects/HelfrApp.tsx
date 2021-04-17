@@ -19,7 +19,7 @@ const HelfrApp: React.FC = (): React.ReactElement => {
       <p>
         Small businesses could easily create and sell their coupons online. The customers then had the possibility to
         support their favorite businesses by buing the coupons during the lockdown and reedem them when the businesses
-        could open again or even fully donate them.
+        could open again - or fully donate them.
       </p>
       <p>
         The frontend is a mobile optimized React single page application using TypeScript and Sass. For the backend we

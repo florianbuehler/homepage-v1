@@ -21,7 +21,7 @@ const Projects: React.FC = (): React.ReactElement => {
       <div className={classes.content}>
         <h2>Projects I have been working on</h2>
         <p>
-          During my work as a consultant and senior consultant at d-fine I have been working on different software
+          During my work as a (senior) consultant and software developer at d-fine I have been working on different
           projects for multiple clients. Additionally I have been working privately on some smaller &quot;just for
           fun&quot; projects to get experienced with new technologies and frameworks. Some of these projects are
         </p>

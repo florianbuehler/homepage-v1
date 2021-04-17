@@ -15,7 +15,7 @@ const About: React.FC = (): React.ReactElement => {
     <Section id="about" className={classes.container}>
       <h2>About Me</h2>
       <p>
-        I&apos;m a 29-year-old passionate full stack developer with a strong hands-on mentality and over 4 years of
+        I&apos;m a 29-year-old passionate full stack web developer with a strong hands-on mentality and over 4 years of
         experience in building prototypes and web applications from front to back in agile teams. I like to create
         software to solve real world problems and I strongly believe that anything can be built if it is tackled by a
         passionate and creative team.

@@ -20,7 +20,7 @@ const HackerNewsClone: React.FC = (): React.ReactElement => {
       <p>
         Tailwind CSS is a utility-first CSS framework. It aims to avoid the &quot;typical&quot; semantic class names,
         which often lead to an overhead, as parts of the HTML structure are replicated in the structure of the style
-        sheets. Instead it provides a set of CSS helper classes to rapidly build modern websites.
+        sheets. Instead it provides a set of CSS &quot;helper&quot; classes to rapidly build modern websites.
       </p>
     </ProjectLayout>
   )
