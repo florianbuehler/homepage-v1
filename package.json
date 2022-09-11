@@ -1,7 +1,8 @@
 {
   "name": "homepage",
-  "private": true,
   "description": "",
+  "homepage": "",
+  "private": true,
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
@@ -14,8 +15,7 @@
     "fix-eslint": "eslint src --ext ts,tsx --fix",
     "stylelint": "stylelint src/**/*.{css,scss}",
     "fix-stylelint": "stylelint --fix src/**/*.{css,scss}",
-    "serve": "gatsby serve",
-    "deploy": "gatsby build --prefix-paths && gh-pages -r https://github.com/florianbuehler/florianbuehler.github.io.git -b main -d public"
+    "serve": "gatsby serve"
   },
   "browserslist": {
     "production": [
@@ -66,8 +66,5 @@
     "stylelint-config-sass-guidelines": "^7.1.0",
     "typescript": "^4.0.3",
     "typewriter-effect": "^2.17.0"
-  },
-  "devDependencies": {
-    "gh-pages": "^3.1.0"
   }
 }
