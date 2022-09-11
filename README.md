@@ -1,6 +1,6 @@
 # Homepage
 
-A personal homepage deployed at [florianbuehler.github.io](https://florianbuehler.github.io/).
+The first version of my personal homepage.
 
 
 ## Technology
